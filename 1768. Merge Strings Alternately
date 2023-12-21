@@ -23,7 +23,6 @@ public:
     }
 };
 
-
 /*
 LEARNINGS: In C++ characters can be appended to strings using the += operator.
 */

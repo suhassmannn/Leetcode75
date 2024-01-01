@@ -1,0 +1,21 @@
+"""
+Given an input string s, reverse the order of the words.
+A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
+Return a string of the words in reverse order concatenated by a single space.
+Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+"""
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        words = s.split()
+        words.reverse()
+        rev_sentence = " ".join(words)
+        return rev_sentence
+
+
+""" 
+Learnings:(in python3) 
+-> strings can be converted to a list of words using the .split() function.
+-> a list of words can be joined using the "<separator>".join() function.
+-> a whole list can be reversed using the .reverse() function. (this function is applicable only to lists)
+"""
